@@ -2,14 +2,14 @@
 <html>
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176109454-1"></script>
+     <!--   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176109454-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'UA-176109454-1');
-        </script>
+        </script> fuck off -->
         
         <title>Convert .Schem to .Schematic</title>
         
@@ -82,19 +82,29 @@
             }
             
             h1 {
+				text-align: center;
                 font-size: 20px;
+            }
+			 h2 {
+				text-align: center;
+                font-size: 16px;
+				font-family: "Segoe Print";
+				text-shadow: 3px 3px 4px pink;
+				margin: 3% 0;
             }
         </style>
     </head>
     <body>
         <section>
-            <h1>Convert .schem files to .schematic files</h1>
-            <p>Convert the new worledit 1.13+ .schem files to the legacy 1.12- .schematic files</p>
-            <p>Blocks that didn't exist in 1.12 will be replaced with air</p>
-            <label for="file">Input your .schem file here</label>: <input id="file" type="file" onchange="upload(this)" multiple/><br/>
-            <small>Privacy notice: All schematics are processed by your local machine and aren't uploaded to any server</small>
+            <h1>Ковертор для .schem -> .schematic</h1>
+			<h2>Special For RuBeta</h2>
+           <!-- <p>Convert the new worledit 1.13+ .schem files to the legacy 1.12- .schematic files</p> -->
+			
+		   <p>Блоки которых не существует на РуБете (или которые не были добавлены в конвертор) будут заменены на воздух</p>
+            <label for="file">Вставьте свой .schem файл сюда</label>: <input id="file" type="file" onchange="upload(this)" multiple/><br/>
+          <!--   <small>Privacy notice: All schematics are processed by your local machine and aren't uploaded to any server</small> -->
             <ul id="downloads"></ul>
             <p id="error"></p>
-        </scetion>
+        </section>
     </body>
 </html>
